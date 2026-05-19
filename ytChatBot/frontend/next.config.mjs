@@ -3,20 +3,20 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/:path*",
         headers: [
           {
-            key: 'X-Frame-Options',
-            value: 'ALLOWALL',
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
           },
           {
-            key: 'Content-Security-Policy',
-            value: "frame-ancestors *;",
+            key: "Content-Security-Policy",
+            value: "frame-ancestors 'self' https://www.youtube.com;",
           },
         ],
       },
-    ]
+    ];
   },
-}
+};
 
-module.exports = nextConfig
+export default nextConfig;
