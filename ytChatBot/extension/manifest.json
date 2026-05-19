@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+
+  "name": "YT AI Copilot",
+
+  "version": "1.0",
+
+  "description": "AI-powered YouTube assistant",
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:3000/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
