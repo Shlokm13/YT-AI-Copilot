@@ -31,7 +31,7 @@
 
 ## 🎥 Chrome Extension Sidebar
 
-<img width="100%" src="https://via.placeholder.com/1200x650.png?text=Add+Your+Screenshot+Here" />
+<img width="100%" src="./screenshots/image.png" />
 
 </div>
 
