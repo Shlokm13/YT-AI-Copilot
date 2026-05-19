@@ -10,10 +10,6 @@ const nextConfig = {
             value:
               "frame-ancestors 'self' https://www.youtube.com https://youtube.com;",
           },
-          {
-            key: "X-Frame-Options",
-            value: "ALLOW-FROM https://www.youtube.com",
-          },
         ],
       },
     ];
