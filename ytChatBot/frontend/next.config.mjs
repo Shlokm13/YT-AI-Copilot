@@ -6,12 +6,13 @@ const nextConfig = {
         source: "/:path*",
         headers: [
           {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
+            key: "Content-Security-Policy",
+            value:
+              "frame-ancestors 'self' https://www.youtube.com https://youtube.com;",
           },
           {
-            key: "Content-Security-Policy",
-            value: "frame-ancestors 'self' https://www.youtube.com;",
+            key: "X-Frame-Options",
+            value: "ALLOW-FROM https://www.youtube.com",
           },
         ],
       },
