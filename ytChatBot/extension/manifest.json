@@ -14,7 +14,7 @@
 
   "host_permissions": [
     "https://www.youtube.com/*",
-    "http://localhost:3000/*"
+    "https://*.vercel.app/*"
   ],
 
   "content_scripts": [
@@ -22,5 +22,9 @@
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-src https://*.vercel.app"
+  }
 }

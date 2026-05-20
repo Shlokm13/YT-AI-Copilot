@@ -7,7 +7,7 @@ let currentUrl = location.href;
 
 const iframe = document.createElement("iframe");
 
-iframe.src = "http://localhost:3000";
+iframe.src = "https://yt-ai-copilot.vercel.app";
 
 iframe.style.position = "fixed";
 iframe.style.top = "0";
@@ -149,7 +149,7 @@ function sendVideoUrl() {
       url: location.href,
     },
 
-    "http://localhost:3000"
+    "https://yt-ai-copilot.vercel.app"
 
   );
 
