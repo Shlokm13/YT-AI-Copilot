@@ -8,12 +8,14 @@ import axios from 'axios'
 // Base URL for the Flask backend
 // Change this to your actual backend URL in production
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+//const API_BASE_URL = 'http://localhost:5000'
+console.log("API URL:", API_BASE_URL)
 
 // Create axios instance with default config
 const api = axios.create({
   baseURL: API_BASE_URL,
 
-  timeout: 120000,
+  timeout: 240000,
 
   headers: {
     'Content-Type': 'application/json',

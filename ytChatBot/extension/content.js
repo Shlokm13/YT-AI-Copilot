@@ -8,6 +8,7 @@ let currentUrl = location.href;
 const iframe = document.createElement("iframe");
 
 iframe.src = "https://yt-ai-copilot.vercel.app";
+//iframe.src = "http://localhost:3000";
 
 iframe.style.position = "fixed";
 iframe.style.top = "0";
@@ -150,6 +151,7 @@ function sendVideoUrl() {
     },
 
     "https://yt-ai-copilot.vercel.app"
+    //"http://localhost:3000"
 
   );
 
@@ -165,6 +167,8 @@ iframe.onload = () => {
   sendVideoUrl();
 
 };
+
+let currentVideoId = new URL(location.href).searchParams.get("v");
 
 
 // ==========================

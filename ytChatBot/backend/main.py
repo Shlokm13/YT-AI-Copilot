@@ -3,6 +3,8 @@ from langchain_google_genai import (
     GoogleGenerativeAIEmbeddings
 )
 
+from langchain_groq import ChatGroq
+
 from langchain_huggingface import HuggingFaceEmbeddings
 
 from dotenv import load_dotenv
@@ -55,9 +57,9 @@ memory = ConversationBufferMemory(
 # CREATE LLM
 # -----------------------------------
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    temperature=0.7
+llm = ChatGroq(
+    model="llama-3.1-8b-instant",
+    api_key=os.environ.get("GROQ_API_KEY")
 )
 
 
