@@ -13,11 +13,11 @@
   ],
 
   "host_permissions": [
-    "https://www.youtube.com/*",
-    "https://*.vercel.app/*"
-  ],
+  "https://www.youtube.com/*",
+  "https://yt-ai-copilot.vercel.app/*"
+],
 
-  "content_scripts": [
+"content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"]
